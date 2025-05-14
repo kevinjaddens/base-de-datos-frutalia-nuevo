@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frutalia - Pedido de Jugos Naturales</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Frutalia 🍹</h1>
+    <form id="pedidoForm">
+      <label for="nombre">Nombre del cliente:</label>
+      <input type="text" name="nombre" id="nombre" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" name="telefono" id="telefono" required>
+
+      <label for="sabor">Sabor del jugo:</label>
+      <select name="sabor" id="sabor" required>
+        <option value="">Selecciona un sabor</option>
+        <option value="Naranja">Naranja</option>
+        <option value="Mango">Mango</option>
+        <option value="Fresa">Fresa</option>
+        <option value="Piña">Piña</option>
+      </select>
+
+      <label for="tamano">Tamaño:</label>
+      <select name="tamano" id="tamano" required>
+        <option value="">Selecciona un tamaño</option>
+        <option value="Chico">Chico</option>
+        <option value="Mediano">Mediano</option>
+        <option value="Grande">Grande</option>
+      </select>
+
+      <label for="comentarios">Comentarios adicionales:</label>
+      <textarea name="comentarios" id="comentarios" rows="3"></textarea>
+
+      <button type="submit">Enviar Pedido</button>
+    </form>
+
+    <div id="mensaje" class="success"></div>
+
+    <h2>Pedidos Registrados</h2>
+    <div id="pedidosContainer"></div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
